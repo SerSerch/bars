@@ -47,7 +47,20 @@ module.exports = {
                 ]
             },
             {
+                test: /\.(eot|ttf|woff|woff2|svg)$/,
+                exclude: /img|[^\.]svg/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '/fonts/[hash].[ext]'
+                        }
+                    }
+                ]
+            },
+            {
                 test: /\.svg$/,
+                exclude: /fonts/,
                 use: [
                     {
                         loader: 'file-loader',
