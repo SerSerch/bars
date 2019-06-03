@@ -1,0 +1,81 @@
+section.model._container._row
+    ._col-12._col-sm-6._col-lg-5._col-xl-4
+        h3
+            | Вы&nbsp;получаете рабочую бизнес-модель
+    ._row._col-12._p-n
+        ._col-8._col-sm-4._col-lg-3._col-xl-3.line
+        ._col-4._col-sm-2._col-xl-1.line._left
+    ._row._col-12._p-n
+        ._col-12._col-lg-10._col-xl-9.model__list
+            .model__list-col
+                input.model__radio(type="radio", name="model", id="model1")
+                label.model__item._license(for="model1")
+                    | Образовательная лицензия
+                .model__sub
+                    | описание
+                input.model__radio(type="radio", name="model", id="model2")
+                label.model__item._landing(for="model2")
+                    | Landing page
+                .model__sub
+                    | описание
+                input.model__radio(type="radio", name="model", id="model3")
+                label.model__item._escort(for="model3")
+                    | Юридическое сопровождение
+                .model__sub
+                    | описание
+                input.model__radio(type="radio", name="model", id="model4")
+                label.model__item._training(for="model4")
+                    | Обучение
+                .model__sub
+                    ul.model__sub-list
+                        li.model__sub-item
+                            | Обучение Вас и Ваших сотрудников
+                            | по техникам привлечения обучающихся
+                        li.model__sub-item
+                            | Личное обучение по вопросам ведения
+                            | бизнеса
+                        li.model__sub-item
+                            | Консультационная и информационная
+                            | поддержка на всех этапах ведения бизнеса
+            .model__list-col
+                input.model__radio(type="radio", name="model", id="model5")
+                label.model__item._business(for="model5")
+                    | Бизнес-бук
+                .model__sub
+                    | описание
+                input.model__radio(type="radio", name="model", id="model6")
+                label.model__item._plan(for="model6")
+                    | Маркетинговый план
+                .model__sub
+                    | описание
+                input.model__radio(type="radio", name="model", id="model7")
+                label.model__item._programs(for="model7")
+                    | Программное обеспечение
+                .model__sub
+                    | описание
+                input.model__radio(type="radio", name="model", id="model8")
+                label.model__item._brand(for="model8")
+                    | Бренд-бук
+                .model__sub
+                    | описание
+    ._row._col-12._ptb-n.model__franchise
+        h2
+            | Франшиза УЦ&nbsp;&laquo;Барс&raquo;<br>
+            | &mdash;&nbsp;самый быстрый старт Вашего бизнеса
+    ._col-12._p-n.payment__form-box
+        form._row.payment__form._col-12._p-n(action="#", method="POST")
+            ._col-lg-3
+                input.payment__input(id="mf-name", name="name", type="text" placeholder=" " required="required")
+                label.payment__label(for="mf-name")
+                    | Ваше имя
+            ._col-lg-3
+                input.payment__input(id="mf-phone", type="tel", name="phone" placeholder=" " required="required")
+                label.payment__label(for="mf-phone")
+                    | Ваш телефон
+            ._col-lg-3
+                input.payment__input(id="mf-city", type="text", name="city" placeholder=" ")
+                label.payment__label(for="mf-city")
+                    | Ваш город
+            ._col-lg-3
+                button.button._form
+                    | Рассчитать стоимость
