@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'sfuitext';
+  src: url('../fonts/sfuitext-heavy.eot');
+  src: url('../fonts/sfuitext-heavy.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/sfuitext-heavy.woff2') format('woff2'),
+  url('../fonts/sfuitext-heavy.woff') format('woff'),
+  url('../fonts/sfuitext-heavy.ttf')  format('truetype'),
+  url('../fonts/sfuitext-heavy.svg') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sfuitext';
+  src: url('../fonts/sfuitext-bold.eot');
+  src: url('../fonts/sfuitext-bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/sfuitext-bold.woff2') format('woff2'),
+  url('../fonts/sfuitext-bold.woff') format('woff'),
+  url('../fonts/sfuitext-bold.ttf')  format('truetype'),
+  url('../fonts/sfuitext-bold.svg') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sfuitext';
+  src: url('../fonts/sfuitext-regular.eot');
+  src: url('../fonts/sfuitext-regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/sfuitext-regular.woff2') format('woff2'),
+  url('../fonts/sfuitext-regular.woff') format('woff'),
+  url('../fonts/sfuitext-regular.ttf')  format('truetype'),
+  url('../fonts/sfuitext-regular.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}

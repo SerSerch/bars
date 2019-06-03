@@ -1,0 +1,53 @@
+.necessarily {
+  padding-top: 87px;
+  &__item {
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: 88px;
+    padding-left: 83px;
+    text-transform: uppercase;
+    &:before {
+      display: block;
+      position: absolute;
+      top: 15px;
+      bottom: 15px;
+      left: 15px;
+      width: 58px;
+      content: '';
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: auto 100%;
+    }
+    &._ecol:before {
+      background-image: url(../svg/ecol.svg);
+    }
+    &._electro:before {
+      background-image: url(../svg/electro.svg);
+    }
+    &._fire:before {
+      background-image: url(../svg/fire.svg);
+    }
+    &._med:before {
+      background-image: url(../svg/med.svg);
+    }
+    &._shield:before {
+      background-image: url(../svg/shield.svg);
+    }
+    &._spy:before {
+      background-image: url(../svg/spy.svg);
+    }
+    &._warning:before {
+      background-image: url(../svg/warning.svg);
+    }
+  }
+  &__button {
+    position: relative;
+    &:before,
+    &:after {
+      display: block;
+      position: absolute;
+      content: '';
+    }
+  }
+}

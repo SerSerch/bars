@@ -1,4 +1,5 @@
 @import "vars";
+@import "fonts";
 
 html,
 body {
@@ -16,8 +17,11 @@ body {
 	min-height: 320px;
 	margin: 0 auto;
 	font-family: $default-font;
-	font-weight: 500;
-	color: #474747;
+	font-size: 0.875rem;
+	line-height: 1rem;
+	font-weight: 400;
+	color: $p-text-color;
+	//overflow-x: hidden;
 }
 
 .wrap-container {
@@ -42,7 +46,8 @@ body {
 	&:hover,
 	&:active,
 	&:focus {
-
+		color: $s-text-color;
+		text-shadow: 0 0 9.9px rgba(0, 222, 193, 0.2);
 	}
 }
 
@@ -56,71 +61,52 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 }
 
-h1 {
-	font-size: 1.875rem;
-	line-height: 2.25rem;
+h1, h2 {
+	font-size: 1.75rem;
+	line-height: 2.1rem;
 	font-weight: 700;
-}
-
-h2 {
-	font-size: 1.625rem;
-	line-height: 1.9375rem;
-	font-weight: 600;
+	text-transform: uppercase;
+	text-shadow: 3px 3px 0 rgba(68, 219, 223, 0.15);
 }
 
 h3 {
-	font-size: 1.375rem;
-	line-height: 1.6875rem;
-	font-weight: 600;
+	font-size: 1.125rem;
+	line-height: 1.5rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.body-big {
+	font-size: 1.5rem;
+	line-height: 1.8rem;
+	font-weight: 900;
+	text-transform: uppercase;
 }
 
 .body0 {
-	font-size: 1.875rem;
-	line-height: 2.25rem;
+	font-size: 1.125rem;
+	line-height: 1.5rem;
 	font-weight: 400;
+	text-transform: uppercase;
 }
 
 .body1 {
-	font-size: 1rem;
-	line-height: 1.375rem;
-	font-weight: 400;
+	font-size: 0.875rem;
+	line-height: 1rem;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 
 .body2 {
-	font-size: 1rem;
-	line-height: 1.375rem;
+	font-size: 0.875rem;
+	line-height: 1rem;
 	font-weight: 400;
 }
 
-.button {
-	width: 230px;
-	min-height: 40px;
-	display: inline-block;
-	border: none;
-	padding: 5px 15px;
-	font-size: 1.25rem;
-	font-weight: 700;
-	color: #000;
-	background-color: #fff;
-	text-transform: none;
-	text-decoration: none;
-	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
-	border-radius: 20px;
-	cursor: pointer;
-	outline: none;
-	&:focus, &:active, &:hover {
-		background-color: rgba(213, 175, 175, 0.8);
-		color: #fff;
-	}
-	&._sb {
-		color: #fff;
-		background-color: #D5AFAF;
-		&:focus, &:active, &:hover {
-			background-color: rgba(226, 199, 199, 0.8);
-			color: #474747;
-		}
-	}
-}
+@import "grid";
+@import "media";
+
+@import "layout/main";
 
 ._p {
 	color: $p-text-color;
@@ -130,7 +116,7 @@ h3 {
 	color: $s-text-color;
 }
 
-@import "grid";
-@import "media";
-
-@import "layout/main";
+._middle {
+	display: flex;
+	align-items: center;
+}

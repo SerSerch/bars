@@ -3,7 +3,10 @@
 */
 
 @media (min-width: 576px) {
-
+  .body-big {
+    font-size: 2.25rem;
+    line-height: 2.7rem;
+  }
 }
 
 /*
@@ -11,24 +14,19 @@
 */
 
 @media (min-width: 768px) {
-  h1, .body0 {
-    font-size: 2.625rem;
-    line-height: 3.1875rem;
+  h1, h2 {
+    font-size: 2.25rem;
+    line-height: 2.7rem;
   }
 
-  h2 {
-    font-size: 2.625rem;
-    line-height: 3.1875rem;
+  .body-big {
+    font-size: 2.75rem;
+    line-height: 3.3rem;
   }
 
-  h3 {
-    font-size: 1.625rem;
-    line-height: 1.9375rem;
-  }
-
-  .body1 {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
+  h3, .body0 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
   }
 }
 
@@ -45,14 +43,16 @@
 */
 
 @media (min-width: 992px) {
-  h1, .body0 {
-    font-size: 3.125rem;
-    line-height: 3.75rem;
+  .wrap-container {
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
   }
 
-  .body1 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
+  .body-big {
+    font-size: 3.5rem;
+    line-height: 4.2rem;
   }
 }
 
@@ -61,32 +61,8 @@
 */
 
 @media (min-width: 1200px) {
-
-}
-
-@media (min-width: 1620px) {
-  h1 {
+  .body-big {
     font-size: 4.5rem;
-    line-height: 5.5rem;
-  }
-
-  h2 {
-    font-size: 3.75rem;
-    line-height: 4.5rem;
-  }
-
-  h3 {
-    font-size: 2.75rem;
-    line-height: 3rem;
-  }
-
-  .body0 {
-    font-size: 2.25rem;
-    line-height: 2.75rem;
-  }
-
-  .body1 {
-    font-size: 1.625rem;
-    line-height: 2.25rem;
+    line-height: 5.4rem;
   }
 }

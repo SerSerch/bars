@@ -1,0 +1,140 @@
+.header {
+  padding-top: 127px;
+  &__triggers {
+    position: relative;
+    padding: 15px 30px 15px 14px;
+    text-transform: uppercase;
+    line-height: 1.125rem;
+    &:before {
+      display: block;
+      position: absolute;
+      width: 4px;
+      left: 0;
+      top: 17px;
+      bottom: 21px;
+      content: '';
+      background-color: #00AD5D;
+      border-radius: 2px;
+    }
+  }
+  &__text {
+    padding-top: 90px;
+  }
+  &__indicators {
+    padding-top: 85px;
+  }
+  &__indicator-item {
+    height: 58px;
+    padding: 20px 30px 10px 100px;
+    position: relative;
+    &:before {
+      display: block;
+      position: absolute;
+      width: 4px;
+      left: 87px;
+      top: 15px;
+      bottom: 15px;
+      content: '';
+      background-color: #00AD5D;
+      border-radius: 2px;
+    }
+    &:after {
+      display: block;
+      position: absolute;
+      width: 77px;
+      left: 0;
+      top: 15px;
+      bottom: 15px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      content: '';
+    }
+    &._money:after {
+      background-image: url(../svg/money.svg);
+    }
+    &._calendar:after {
+      background-image: url(../svg/calendar.svg);
+    }
+    &._favorites:after {
+      background-size: auto 100%;
+      background-image: url(../svg/favorites.svg);
+    }
+    &._clock:after {
+      background-size: auto 100%;
+      background-image: url(../svg/alarm-clock.svg);
+    }
+  }
+  &__scroll-box {
+    padding-top: 57px;
+  }
+  &__scroll {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    box-sizing: border-box;
+    &:before,
+    &:after,
+    .header__mouse {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      content: '';
+      box-sizing: border-box;
+    }
+    &:before {
+      width: 134px;
+      height: 134px;
+      border: 1px solid rgba(0, 173, 93, 0.6);
+    }
+    &:after {
+      width: 108px;
+      height: 108px;
+      border: 1px solid #ffffff;
+    }
+  }
+  &__mouse {
+    width: 76px;
+    height: 76px;
+    border: 1px solid #00ad5d;
+    background-image: url(../svg/mouse.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 52px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    &__caption {
+      text-align: center;
+    }
+    &__indicator-item {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .header {
+    &:before {
+      display: block;
+      position: absolute;
+      content: '';
+      box-sizing: border-box;
+      background-image: url(../img/man.png);
+      background-repeat: no-repeat;
+      background-size: 925px;
+      background-position: left 10px;
+      left: 42%;
+      right: 0;
+      height: 1061px;
+    }
+  }
+}

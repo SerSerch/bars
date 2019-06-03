@@ -1,0 +1,139 @@
+@import "../vars";
+.model {
+  padding-top: 78px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__list-col {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: #000000;
+  }
+  &__item {
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: 94px;
+    width: 100%;
+    padding: 0 77px 0 94px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    &:before {
+      display: block;
+      position: absolute;
+      width: 38px;
+      height: 34px;
+      left: 30px;
+      content: '';
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: left center;
+    }
+    &._license:before {
+      background-image: url(../svg/books.svg);
+    }
+    &._business:before {
+      background-image: url(../svg/analysis.svg);
+    }
+    &._escort:before {
+      background-image: url(../svg/branding.svg);
+    }
+    &._training:before {
+      background-image: url(../svg/customer-support.svg);
+    }
+    &._brand:before {
+      background-image: url(../svg/marketing.svg);
+    }
+    &._landing:before {
+      background-image: url(../svg/responsive.svg);
+    }
+    &._programs:before {
+      background-image: url(../svg/speed-test.svg);
+    }
+    &._plan:before {
+      background-image: url(../svg/statistics.svg);
+    }
+    &:after {
+      display: block;
+      position: absolute;
+      top: 30px;
+      bottom: 30px;
+      right: 30px;
+      width: 15px;
+      height: 8px;
+      margin: auto 0;
+      content: '';
+      background-image: url(../img/care-down.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center center;
+    }
+  }
+  &__sub {
+    width: 100%;
+    height: 0;
+    padding: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  &__sub-list {
+    padding: 0 0 0 15px;
+    margin: 0;
+    list-style-position: outside;
+    margin-bottom: -18px;
+  }
+  &__sub-item {
+    padding: 0 0 18px 20px;
+  }
+  &__radio {
+    display: none;
+    &:checked+label+.model__sub {
+      height: auto;
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+    &:checked+label {
+      color: $s-text-color;
+      &:after {
+        background-image: url(../img/care-up.png);
+      }
+    }
+  }
+  &__franchise {
+    padding-top: 41px;
+  }
+}
+
+@media (min-width: 768px) {
+  .model {
+    &__list-col {
+      width: 45.97%;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .model {
+    &:before {
+      display: block;
+      position: absolute;
+      content: '';
+      height: 576px;
+      left: 37%;
+      right: 0;
+      background-image: url(../img/model.png);
+      background-repeat: no-repeat;
+      transform: translateY(135px);
+    }
+  }
+}

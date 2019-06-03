@@ -1,0 +1,47 @@
+.niche {
+  padding-top: 101px;
+  &__item {
+    position: relative;
+    padding-top: 19px;
+    padding-left: 30px;
+    &:before {
+      display: block;
+      position: absolute;
+      content: '';
+      top: 27px;
+      left: 0;
+      width: 4px;
+      height: 4px;
+      background-color: #fff;
+      border-radius: 4px;
+    }
+  }
+  &__sources {
+    padding: 40px 0 4px;
+  }
+  &__essence {
+    padding-top: 102px;
+  }
+  &__essence-text {
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 992px) {
+  .niche {
+    &:before {
+      display: block;
+      position: absolute;
+      content: '';
+      box-sizing: border-box;
+      background-image: url(../img/books.png);
+      background-repeat: no-repeat;
+      background-size: 885px;
+      background-position: left -60px;
+      left: 47%;
+      right: 0;
+      height: 762px;
+      transform: translateY(-50px);
+    }
+  }
+}
