@@ -2,7 +2,21 @@
   padding-top: 47px;
   &__link {
     width: 100%;
-    padding: 15px 0;
+    padding: 12px 0;
     text-align: right;
+  }
+  &__logo {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 576px) {
+  .top-menu {
+    &__link {
+      font-size: 1.125rem;
+      line-height: 1.35rem;
+      padding: 10px 0;
+      font-weight: 700;
+    }
   }
 }

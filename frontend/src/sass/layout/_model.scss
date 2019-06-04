@@ -97,12 +97,12 @@
   }
   &__radio {
     display: none;
-    &:checked+label+.model__sub {
+    &:checked+.model__item+.model__sub {
       height: auto;
       padding: 30px;
       margin-bottom: 30px;
     }
-    &:checked+label {
+    &:checked+.model__item {
       color: $s-text-color;
       &:after {
         background-image: url(../img/care-up.png);
