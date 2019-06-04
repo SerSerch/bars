@@ -72,9 +72,14 @@ for (let i of phoneInput) {
     i.addEventListener('input', inputPhone);
 }
 
-function showVideo() {
-    document.querySelector('.reviews__video-btn').classList.add('_active');
-    document.querySelector('.reviews__video').classList.add('_active');
+function showModel (e) {
+    let dataFor = e.currentTarget.dataset.for;
+    if (document.querySelector(`#${dataFor}`).checked) {
+        document.querySelector('#model0').checked = true;
+    } else {
+        document.querySelector(`#${dataFor}`).checked = true;
+    }
+
 }
 
-document.querySelector('.reviews__video-btn').addEventListener('click', showVideo);
+document.querySelectorAll('.model__item').forEach(i => i.addEventListener('click', showModel));
