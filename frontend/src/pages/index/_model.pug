@@ -8,56 +8,88 @@ section.model._container._row
     ._row._col-12._p-n
         ._col-12._col-lg-10._col-xl-9.model__list
             .model__list-col
+                input.model__radio(type="radio", name="model", id="model0")
                 input.model__radio(type="radio", name="model", id="model1")
-                label.model__item._license(for="model1")
+                .model__item._license(data-for="model1")
                     | Образовательная лицензия
                 .model__sub
-                    | описание
+                    ul.model__sub-list
+                        li.model__sub-item
+                            | Вы&nbsp;получаете право пользования образовательной лицензией УЦ&nbsp;&laquo;Барс&raquo;
                 input.model__radio(type="radio", name="model", id="model2")
-                label.model__item._landing(for="model2")
+                .model__item._landing(data-for="model2")
                     | Landing page
                 .model__sub
-                    | описание
+                    ul.model__sub-list
+                        li.model__sub-item
+                            | Настройка контекстной рекламы (Яндекс, Google), которая уже с&nbsp;первого месяца Вашей работы позволит Вам получать заявки и&nbsp;звонки от&nbsp;потенциальных клиентов
+                        li.model__sub-item
+                            | Служба технической поддержки сайта
                 input.model__radio(type="radio", name="model", id="model3")
-                label.model__item._escort(for="model3")
+                .model__item._escort(data-for="model3")
                     | Юридическое сопровождение
                 .model__sub
-                    | описание
+                    ul.model__sub-list
+                        li.model__sub-item
+                            | Правовая помощь и&nbsp;поддержка наших юристов по&nbsp;всем вопросам ведения Вашего бизнеса
+                        li.model__sub-item
+                            | Судебная и&nbsp;консультационная защита от&nbsp;возможных претензий обучающихся
                 input.model__radio(type="radio", name="model", id="model4")
-                label.model__item._training(for="model4")
+                .model__item._training(data-for="model4")
                     | Обучение
                 .model__sub
                     ul.model__sub-list
                         li.model__sub-item
-                            | Обучение Вас и Ваших сотрудников
-                            | по техникам привлечения обучающихся
+                            | Обучение Вас и&nbsp;Ваших сотрудников по&nbsp;техникам привлечения обучающихся
                         li.model__sub-item
-                            | Личное обучение по вопросам ведения
-                            | бизнеса
+                            | Личное обучение по&nbsp;вопросам ведения бизнеса
                         li.model__sub-item
-                            | Консультационная и информационная
-                            | поддержка на всех этапах ведения бизнеса
+                            | Консультационная и&nbsp;информационная поддержка на&nbsp;всех этапах ведения бизнеса
             .model__list-col
                 input.model__radio(type="radio", name="model", id="model5")
-                label.model__item._business(for="model5")
+                .model__item._business(data-for="model5")
                     | Бизнес-бук
                 .model__sub
-                    | описание
+                    ul.model__sub-list
+                        li.model__sub-item
+                            | Бизнес-план, содержащий базовое исследование Вашего города: спрос, ценовая политика
+                        li.model__sub-item
+                            | Финансовую модель вывода учебного центра на&nbsp;самоокупаемость и&nbsp;прибыльность
+                        li.model__sub-item
+                            | Руководство по&nbsp;управлению брендом и&nbsp;право его использования (франчбук)
+                        li.model__sub-item
+                            | Бухгалтерское сопровождение: бухгалтерский учет, отчетность
                 input.model__radio(type="radio", name="model", id="model6")
-                label.model__item._plan(for="model6")
+                .model__item._plan(data-for="model6")
                     | Маркетинговый план
                 .model__sub
-                    | описание
+                    ul.model__sub-list
+                        li.model__sub-item
+                            | Шаблоны &laquo;продающих&raquo; коммерческих предложений
+                        li.model__sub-item
+                            | Обучение продажам, скрипты для телефонных звонков в&nbsp;офисе и&nbsp;в&nbsp;работе с&nbsp;клиентами &laquo;в&nbsp;полях&raquo;
+                        li.model__sub-item
+                            | Аккаунты в&nbsp;социальных сетях, обучение таргетированной рекламе
+                        li.model__sub-item
+                            | Доступ к&nbsp;базе потенциальных клиентов УЦ&nbsp;&laquo;Барс&raquo;
+                        li.model__sub-item
+                            | Макеты рекламных материалов
                 input.model__radio(type="radio", name="model", id="model7")
-                label.model__item._programs(for="model7")
+                .model__item._programs(data-for="model7")
                     | Программное обеспечение
                 .model__sub
-                    | описание
+                    ul.model__sub-list
+                        li.model__sub-item
+                            | CRM&nbsp;&mdash; система управления, предназначенная для автоматизации стратегий взаимодействия с&nbsp;клиентами, в&nbsp;частности, для повышения уровня продаж, оптимизации маркетинга и&nbsp;улучшения обслуживания клиентов путем сохранения информации о&nbsp;клиентах и&nbsp;истории взаимоотношений с&nbsp;ними.
+                        li.model__sub-item
+                            | IP&nbsp;&mdash; телефония
                 input.model__radio(type="radio", name="model", id="model8")
-                label.model__item._brand(for="model8")
+                .model__item._brand(data-for="model8")
                     | Бренд-бук
                 .model__sub
-                    | описание
+                    ul.model__sub-list
+                        li.model__sub-item
+                            | Универсальное руководство по&nbsp;использованию фирменного стиля компании.
     ._row._col-12._ptb-n.model__franchise
         h2
             | Франшиза УЦ&nbsp;&laquo;Барс&raquo;<br>
