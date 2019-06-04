@@ -1,0 +1,121 @@
+@import "vars";
+@import "fonts";
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: $background-color;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	min-width: 320px;
+	min-height: 320px;
+	margin: 0 auto;
+	font-family: $default-font;
+	font-size: 0.875rem;
+	line-height: 1rem;
+	font-weight: 400;
+	color: $p-text-color;
+}
+
+.wrap-container {
+	display: flex;
+	flex: 1 0 auto;
+	flex-direction: column;
+}
+
+.main {
+	position: relative;
+}
+
+.footer {
+	flex: 0 0 auto;
+}
+
+.link {
+	display: block;
+	text-decoration: none;
+	outline: none;
+	color: $p-text-color;
+	&:hover,
+	&:active,
+	&:focus {
+		color: $s-text-color;
+		text-shadow: 0 0 9.9px rgba(0, 222, 193, 0.2);
+	}
+}
+
+._ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+h1, h2 {
+	font-size: 1.75rem;
+	line-height: 2.1rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-shadow: 3px 3px 0 rgba(68, 219, 223, 0.15);
+}
+
+h3 {
+	font-size: 1.125rem;
+	line-height: 1.5rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.body-big {
+	font-size: 3rem;
+	line-height: 3.6rem;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+.body0 {
+	font-size: 1.125rem;
+	line-height: 1.5rem;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.body1 {
+	font-size: 0.875rem;
+	line-height: 1rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.body2 {
+	font-size: 0.875rem;
+	line-height: 1rem;
+	font-weight: 400;
+}
+
+@import "grid";
+@import "media";
+
+@import "layout/main";
+
+._p {
+	color: $p-text-color;
+}
+
+._s {
+	color: $s-text-color;
+}
+
+._middle {
+	display: flex;
+	align-items: center;
+}

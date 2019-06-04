@@ -1,0 +1,40 @@
+section.payment._container._row
+    ._col-12._col-xl-10.body0
+        | Учебный центр дистанционного образования&nbsp;&laquo;Барс&raquo;<br>
+        | предлагает дистанционные курсы профессиональной подготовки,
+        | повышения квалификации и&nbsp;обучения по&nbsp;специальностям
+        | в&nbsp;различных сферах профессиональной деятельности.
+    ._row._col-12.payment__numb-box
+        .body-big.payment__numb(data-text="курсов онлайн обучения")
+            | 150+
+        .body-big.payment__numb._center(data-text="средняя соимость наших курсов")
+            | <span class="payment__up-left" data-text="от">1.000</span>
+            | <span class="payment__up-left" data-text="до">25.000</span>
+        .body-big.payment__numb(data-text="обучалось за первый год работы УЦ")
+            | <span class="payment__up-right" data-text="чел.">1.000+</span>
+    ._row._col-12._p-n.payment__caption
+        ._col-10._col-md-8._col-lg-6._offset-2._offset-md-4._offset-lg-6
+            h3
+                | Расчет прибыли с&nbsp;учебного центра в&nbsp;вашем городе
+        ._col-4._col-sm-2._col-xl-1._offset-sm-3._offset-md-5._offset-lg-6.line._right
+        ._col-8._col-sm-7._col-md-5._col-lg-4._col-xl-5.line
+        ._col-10._col-md-8._col-lg-6._offset-2._offset-md-4._offset-lg-6
+            | Заполните форму и&nbsp;получите финансовый план открытия<br>
+            | УЦ&nbsp;в&nbsp;Вашем городе
+    ._col-12._p-n.payment__form-box
+        form._row.payment__form._col-12._p-n(action="/mail.php", method="POST")
+            ._col-lg-3
+                input.payment__input(id="pf-name", name="name", type="text" placeholder=" " required="required")
+                label.payment__label(for="pf-name")
+                    | Ваше имя
+            ._col-lg-3
+                input.payment__input(id="pf-phone", type="tel", name="phone" placeholder=" " required="required")
+                label.payment__label(for="pf-phone")
+                    | Ваш телефон
+            ._col-lg-3
+                input.payment__input(id="pf-city", type="text", name="city" placeholder=" ")
+                label.payment__label(for="pf-city")
+                    | Ваш город
+            ._col-lg-3
+                button.button._form(type="send")
+                    | Рассчитать стоимость

@@ -1,0 +1,117 @@
+.payment {
+  padding-top: 68px;
+  &__numb-box {
+    padding-top: 53px;
+    justify-content: center;
+  }
+  &__numb {
+    position: relative;
+    margin: 15px 0;
+    &:before {
+      display: block;
+      position: absolute;
+      content: attr(data-text);
+      font-size: 0.875rem;
+      line-height: 1rem;
+      font-weight: 400;
+      top: 100%;
+      transform: translateY(-8px);
+      text-transform: none;
+    }
+    &._center {
+      margin: 15px auto;
+      &:before {
+        padding-left: 30px;
+      }
+    }
+  }
+  &__up-left {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    &:before {
+      display: block;
+      position: absolute;
+      content: attr(data-text);
+      font-size: 0.875rem;
+      line-height: 1rem;
+      font-weight: 400;
+      top: 5px;
+      transform: translateX(-100%);
+    }
+  }
+  &__up-right {
+    display: inline-block;
+    position: relative;
+    padding-right: 30px;
+    &:after {
+      display: block;
+      position: absolute;
+      content: attr(data-text);
+      font-size: 0.875rem;
+      line-height: 1rem;
+      font-weight: 400;
+      top: 5px;
+      right: 0;
+    }
+  }
+  &__caption {
+    padding-top: 44px;
+    justify-content: right;
+    text-align: right;
+  }
+  &__form-box {
+    padding-top: 51px;
+  }
+  &__form {
+    border-radius: 10px;
+    background-color: #00ad5d;
+  }
+  &__label {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 15px;
+    right: 15px;
+    top: 15px;
+    bottom: 15px;
+    text-transform: uppercase;
+    text-shadow: 0 0 27px #00dec1;
+    color: #00ad5d;
+    font-weight: 700;
+  }
+  &__input {
+    display: block;
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #00ad5d;
+    box-shadow: 0 0 26px 3px rgba(0, 173, 93, 0.34);
+    &:focus,
+    &:hover,
+    &:active {
+      box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.6), inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6);
+    }
+    &:focus,
+    &:not(:placeholder-shown) {
+      &+.payment__label {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .payment {
+    &__numb {
+      width: 100%;
+    }
+  }
+}

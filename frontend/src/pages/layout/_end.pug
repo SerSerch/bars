@@ -1,0 +1,21 @@
+input.modal__checkbox(type="checkbox", id="modal-close")
+aside.modal
+    label.modal__bg(for="modal-close")
+    ._col-12.modal__form-box
+        form._row.payment__form._p-n(action="/mail.php", method="POST")
+            ._col-12
+                input.payment__input(id="ff-name", name="name", type="text" placeholder=" " required="required")
+                label.payment__label(for="ff-name")
+                    | Ваше имя
+            ._col-12
+                input.payment__input(id="ff-phone", type="tel", name="phone" placeholder=" " required="required")
+                label.payment__label(for="ff-phone")
+                    | Ваш телефон
+            ._col-12
+                input.payment__input(id="ff-city", type="email", name="email" placeholder=" ")
+                label.payment__label(for="ff-city")
+                    | Ваш e-mail
+            ._col-12
+                button.button._form(type="send")
+                    | Рассчитать стоимость
+    label.modal__close(for="modal-close")
